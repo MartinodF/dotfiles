@@ -1,0 +1,11 @@
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = main
+[merge]
+	conflictStyle = diff3
+[pull]
+	rebase = true
+[user]
+	email = puntodifuga@gmail.com
+	name = Martino di Filippo
