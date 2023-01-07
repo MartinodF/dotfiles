@@ -9,3 +9,5 @@
 [user]
 	email = puntodifuga@gmail.com
 	name = Martino di Filippo
+[push]
+	autoSetupRemote = true
