@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+alias ..='cd ..'
+alias ...='cd ../..'
+
+alias r='cd ~/Repos'
+
+alias l='ls -lF --color'
+alias ls='command ls --color'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias sudo='sudo '
+
+alias gs='git status'
+alias gp='git push'
+
+if hash bat 2> /dev/null; then
+	alias cat='bat'
+fi;
+
+if hash tldr 2> /dev/null; then
+	alias man='tldr'
+fi;

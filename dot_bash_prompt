@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+export TERM='xterm-256color'
+
+if [[ $(type -P git-radar) ]]; then
+  prompt_git() {
+    echo -e "$(git-radar --bash --fetch)"
+  }
+else
+  prompt_git() {
+    echo -n
+  }
+fi
+
+PS1='\[\e[1;37m\]\A\[\e[1;30m\] › \[\e[2;37m\]\w\[\e[0m\]$(prompt_git)\n\[\e[36m\]→\[\e[m\] '
