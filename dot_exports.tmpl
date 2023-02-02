@@ -9,6 +9,9 @@ export IDF_PATH=~/Repos/esp
 export IDF_TOOLS_PATH=~/.espressif
 export NODE_REPL_HISTORY=~/.node_history
 # export TERMINAL=termite
+{{- if eq .chezmoi.hostname "arch" }}
+export TMPDIR=~/.local/tmp
+{{- end }}
 # export XDG_CURRENT_DESKTOP=Unity
 export XKB_DEFAULT_LAYOUT=us
 export XKB_DEFAULT_VARIANT=altgr-intl
